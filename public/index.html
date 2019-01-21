@@ -1,23 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
     <title>CSS/HTML Workshop with Privateaser</title>
-  </head>
+   <head>
+<!-- Meta Tags for Bootstrap 4 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap 4 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+ 
+
+ 
+
+
+   <div id="bar">
+
+
+<div class="card bg-dark text-white " style >
+  <img class="card-img" src="/Users/olivierdupain/Downloads/bar4.jpg" >
+  <div class="card-img-overlay">
+    <h1 class="card-title "> Privateaser Booking Center </h1>
+    <h5 class="card-text">Add all data about the bar you want to book</h5>
+  </div>
+</div>
+
+<div class="card-deck text-center container-fluid ">
+  <div class="card container-fluid">
+    <div class="card-body">
+      <h5 class="card-title">Bar's name</h5>
+      <p class="card-text">What is the name of the bar ?</p>
+<input class="js-name" type="text" placeholder="Bar name"/>
+</div>
+</div>
+  <div class="card container-fluid">
+    <div class="card-body">
+      <h5 class="card-title">Price per person</h5>
+      <p class="card-text">What is the price per person ?</p>
       <input class="js-price-by-person" type="number" placeholder="Price by person"/>
     </div>
-    <div id="booker">
+  </div>
+  <div class="card container-fluid">
+    <div class="card-body">
+      <h5 class="card-title">Price per hour</h5>
+      <p class="card-text">What is the price per hour ?</p>
+      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+
+        <div id="booker">
+
+<div class="card bg-dark text-white" style >
+  <img class="card-img" src="/Users/olivierdupain/Downloads/photo3.jpg" >
+  <div class="card-img-overlay">
+    <h4 class="card-title">Customer informations</h4>
+  </div>
+</div>
+
+<div class="card-deck text-center container-fluid ">
+  <div class="card ">
+    <div class="card-body">
+      <h5 class="card-title">Booker name</h5>
+      <p class="card-text">What is the name of the booker ?</p>
       <input class="js-name" type="text" placeholder="Booker name"/>
+</div>
+</div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Time in the bar</h5>
+      <p class="card-text">How long do you want to stay in the bar (in hour) ?</p>
       <input class="js-time" type="number" placeholder="Time in h"/>
+    </div>
+  </div>
+  <div class="card ">
+    <div class="card-body">
+      <h5 class="card-title">Number of guests</h5>
+      <p class="card-text">How many guests do you have ?</p>
       <input class="js-persons" type="number" placeholder="Persons"/>
+    </div>
+  </div>
+    <div class="card ">
+    <div class="card-body">
+      <h5 class="card-title">Insurance</h5>
+      <p class="card-text">Do you want to subscribe a damage insurance ? (1€ per person)</p>
       <input class="js-option" type="checkbox" placeholder="Deductible option"/>
     </div>
-    <button id="compute">Compute</button>
+  </div>
+</div>
+
+    </div>
+
+
+<input id="compute" class="btn btn-secondary btn-lg container-fluid text-center" type="button" value="Quote request">
+
     <div id="actors"></div>
+
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    
   </body>
 </html>
